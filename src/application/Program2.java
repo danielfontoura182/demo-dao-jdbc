@@ -31,6 +31,18 @@ public class Program2 {
 		System.out.println("Department updated!");
 		System.out.println();
 		
+		System.out.println("==== TEST 3: DELETE DEPARTMENT ===");
+		int idToDelete = 7;
+		departmentDao.deleteById(idToDelete);
+		System.out.println();
+		
+		System.out.println("==== TEST 4: findById ===");
+		System.out.println(departmentDao.findById(id));
+		System.out.println();
+		
+		System.out.println("==== TEST 5: findAll ===");
+		System.out.println(departmentDao.findAll());
+		
 		
 		
 		
